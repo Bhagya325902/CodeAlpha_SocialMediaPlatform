@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | CodeAlpha</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>CodeAlpha Feed</h1>
+    <nav>
+      <a href="profile.html">Profile</a>
+      <button id="logoutButton" class="link-button">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container home-container">
+    <section class="post-create">
+      <h2>Share a post</h2>
+      <form id="postForm">
+        <textarea id="content" rows="4" placeholder="What's on your mind?" required></textarea>
+        <button type="submit">Post</button>
+        <p id="postMessage" class="message"></p>
+      </form>
+    </section>
+
+    <section class="post-feed">
+      <h2>Latest posts</h2>
+      <div id="feed"></div>
+    </section>
+  </main>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

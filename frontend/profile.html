@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | CodeAlpha</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <h1>Your Profile</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <button id="logoutButton" class="link-button">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container profile-container">
+    <section class="profile-card">
+      <div class="profile-avatar" id="avatar">?</div>
+      <h2 id="username"></h2>
+      <p id="email"></p>
+      <p id="bio"></p>
+    </section>
+
+    <section class="profile-edit">
+      <h2>Edit Profile</h2>
+      <form id="profileForm">
+        <label>Bio</label>
+        <textarea id="bioInput" rows="3" placeholder="Add a short bio"></textarea>
+
+        <label>Avatar URL</label>
+        <input type="url" id="avatarUrlInput" placeholder="https://example.com/avatar.jpg" />
+
+        <button type="submit">Save</button>
+        <p id="profileMessage" class="message"></p>
+      </form>
+    </section>
+
+    <section class="profile-posts">
+      <h2>Your posts</h2>
+      <div id="posts"></div>
+    </section>
+  </main>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
